@@ -1,7 +1,8 @@
 #!/bin/bash
 
 comment=$1
-if [ -z comment ]
+echo "the comment is $comment"
+if [ -z $comment ]
 then
 	echo "please input your comment"
 	read comment
