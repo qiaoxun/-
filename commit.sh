@@ -1,7 +1,12 @@
 #!/bin/bash
-echo "please input your comment"
-read comment
-echo $comment
+
+comment=$1
+if [ -z comment ]
+then
+	echo "please input your comment"
+	read comment
+	echo $comment
+fi
 
 git add .
 
